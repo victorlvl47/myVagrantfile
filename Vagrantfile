@@ -18,7 +18,8 @@ Vagrant.configure("2") do |config|
   config.vm.network "forwarded_port", guest: 3000, host: 3000
   config.vm.network "forwarded_port", guest: 5000, host: 5000
   config.vm.provider :virtualbox do |vb|
-      vb.name = "___MACHINE_NAME_HERE_"
+      # Name of the machine.
+      vb.name = "MACHINE_NAME"
   end
 
   # Disable automatic box update checking. If you disable this, then
